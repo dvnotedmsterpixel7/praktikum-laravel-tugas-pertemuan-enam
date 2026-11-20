@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detail Mata Kuliah</title>
+</head>
+<body>
+    <h2>Detail Mata Kuliah</h2>
+
+    <p>
+        <strong>Kode Mata Kuliah:</strong>
+        {{ $matakuliah->kode_matakuliah }}
+    </p>
+
+    <p>
+        <strong>Nama Mata Kuliah:</strong>
+        {{ $matakuliah->nama_matakuliah }}
+    </p>
+
+    <p>
+        <strong>Jumlah SKS:</strong>
+        {{ $matakuliah->sks }}
+    </p>
+
+    <p>
+        <strong>Dibuat pada:</strong>
+        {{ $matakuliah->created_at }}
+    </p>
+
+    <p>
+        <strong>Diperbarui pada:</strong>
+        {{ $matakuliah->updated_at }}
+    </p>
+
+    <a href="{{ route('matakuliah.index') }}">Kembali</a>
+</body>
+</html>
